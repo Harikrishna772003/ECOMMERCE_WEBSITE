@@ -31,7 +31,7 @@ function Hero() {
             description:
                 "Grab today's hottest discounts before they're gone.",
             image:
-                "https://images.unsplash.com/photo-1517336714739-489689fd1ca8?w=900",
+                "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1000&q=80",
             color: "#f59e0b"
         }
 
