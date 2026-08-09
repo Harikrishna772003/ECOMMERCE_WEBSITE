@@ -1,43 +1,46 @@
 # 🛒 ShopEase — Full-Stack E-Commerce Website
 
-<<<<<<< HEAD
-ShopEase is a full-stack e-commerce website developed using **React + Vite** for the frontend and **Python Flask** for the backend.
+> A modern full-stack e-commerce platform built with **React + Vite** for the frontend and **Python + Flask** for the backend.
 
-The project provides a complete online shopping experience with product browsing, authentication, shopping cart, wishlist, orders, payments, reviews, coupons, notifications, invoices, and administrative management.
-=======
-ShopEase is a full-stack e-commerce web application developed using **React** for the frontend and **Python Flask** for the backend.
+ShopEase provides a complete online shopping experience with product browsing, authentication, cart management, wishlist, orders, payments, reviews, coupons, notifications, invoice generation, and an administrative management panel.
 
-The project provides a complete online shopping experience including product browsing, authentication, shopping cart, wishlist, orders, payments, reviews, coupons, notifications, invoice generation, and an admin management system.
->>>>>>> 4c20051 (Improve README documentation)
+---
+
+## 🔗 Quick Navigation
+
+| Area | Link |
+|---|---|
+| 🛍️ User Frontend | [Open Frontend](./frontend) |
+| 👤 User Pages | [Open User Pages](./frontend/src/pages) |
+| 👨‍💼 Admin Pages | [Open Admin/User Pages](./frontend/src/pages) |
+| ⚙️ Backend API | [Open Backend](./backend) |
+| 🗄️ Database | [Open Database](./database) |
+| 📚 Documentation | [Open Docs](./docs) |
+| 🖼️ Screenshots | [View Screenshots](./screenshots) |
+
+> **Note:** User and Admin functionality are part of the frontend application. Their pages are organized inside `frontend/src/pages`.
 
 ---
 
 ## 📌 Project Overview
 
-ShopEase is designed as a modern e-commerce platform where users can:
+ShopEase is designed as a complete e-commerce platform where users can:
 
-- Register and log in
-- Browse products
-- Search for products
-- View product details
-- Add products to cart
-- Manage wishlist
-- Place orders
-- Track orders
-- Make online payments
-- Apply coupons
-- Write product reviews
-- Receive notifications
-<<<<<<< HEAD
-- View/download invoices
+- 🔐 Register and log in
+- 👤 Manage their profile
+- 🛍️ Browse products
+- 🔎 Search products
+- 📦 View product details
+- 🛒 Add products to cart
+- ❤️ Manage wishlist
+- 💳 Complete online payments
+- 📋 Place and track orders
+- ⭐ Write product reviews
+- 🎟️ Apply coupons
+- 🔔 Receive notifications
+- 🧾 Generate and download invoices
 
-The project also contains an **Admin Panel** for managing products, users, orders, coupons, reviews, and dashboard information.
-=======
-- Generate and download invoices
-- Manage their profile
-
-The project also includes a dedicated **Admin Panel** for managing products, users, orders, coupons, reviews, and dashboard information.
->>>>>>> 4c20051 (Improve README documentation)
+The project also includes an **Admin Panel** for managing products, users, orders, coupons, reviews, and dashboard information.
 
 ---
 
@@ -45,13 +48,16 @@ The project also includes a dedicated **Admin Panel** for managing products, use
 
 ## 👤 User Features
 
-<<<<<<< HEAD
 - User Registration
 - User Login
 - User Profile Management
 - Product Browsing
 - Product Search
 - Product Details
+- Product Categories
+- Product Sorting
+- Product Filtering
+- Product Pagination
 - Shopping Cart
 - Wishlist
 - Checkout
@@ -63,50 +69,6 @@ The project also includes a dedicated **Admin Panel** for managing products, use
 - Notifications
 - Invoice Generation
 
----
-
-## 🛍️ Product Features
-=======
-- 🔐 User Registration
-- 🔑 User Login
-- 👤 User Profile Management
-- 🛍️ Product Browsing
-- 🔎 Product Search
-- 📦 Product Details
-- 🛒 Shopping Cart
-- ❤️ Wishlist
-- 💳 Checkout
-- 💰 Online Payments
-- 📋 Order Management
-- 🚚 Order Tracking
-- ⭐ Product Reviews
-- 🎟️ Coupon Management
-- 🔔 Notifications
-- 🧾 Invoice Generation
-
----
-
-## 📦 Product Features
->>>>>>> 4c20051 (Improve README documentation)
-
-- Product Listing
-- Product Search
-- Product Categories
-- Product Sorting
-<<<<<<< HEAD
-=======
-- Product Filtering
->>>>>>> 4c20051 (Improve README documentation)
-- Product Pagination
-- Product Details
-- Product Images
-- Product Pricing
-- Product Availability
-- Product Reviews
-
----
-
-<<<<<<< HEAD
 ## 👨‍💼 Admin Features
 
 - Admin Login
@@ -120,9 +82,9 @@ The project also includes a dedicated **Admin Panel** for managing products, use
 
 ---
 
-# 🛠️ Technologies Used
+# 🧰 Technologies Used
 
-## Frontend
+### 🎨 Frontend
 
 - React
 - Vite
@@ -130,7 +92,7 @@ The project also includes a dedicated **Admin Panel** for managing products, use
 - HTML5
 - CSS3
 
-## Backend
+### ⚙️ Backend
 
 - Python
 - Flask
@@ -138,50 +100,13 @@ The project also includes a dedicated **Admin Panel** for managing products, use
 - JWT Authentication
 - Flask-CORS
 
-## Database
+### 🗄️ Database
 
 - SQL Database
-- SQLAlchemy / Flask-SQLAlchemy
-=======
-## 🛠️ Admin Features
+- SQLAlchemy
+- Flask-SQLAlchemy
 
-- 🔐 Admin Login
-- 📊 Admin Dashboard
-- 📦 Product Management
-- 👥 User Management
-- 🛒 Order Management
-- 🎟️ Coupon Management
-- ⭐ Review Management
-- 📈 Dashboard Statistics
-
----
-
-# 💻 Technologies Used
-
-## Frontend
-
-- ⚛️ React
-- ⚡ Vite
-- 🟨 JavaScript
-- 🌐 HTML
-- 🎨 CSS
-
-## Backend
-
-- 🐍 Python
-- 🌶️ Flask
-- 🔌 REST API
-- 🔐 JWT Authentication
-- 🔗 Flask-CORS
-
-## Database
-
-- 🗄️ SQL Database
-- 🔗 SQLAlchemy
-- 🐍 Flask-SQLAlchemy
->>>>>>> 4c20051 (Improve README documentation)
-
-## Development Tools
+### 🛠️ Development Tools
 
 - Visual Studio Code
 - Git
@@ -191,11 +116,7 @@ The project also includes a dedicated **Admin Panel** for managing products, use
 
 ---
 
-<<<<<<< HEAD
-# 📂 Project Structure
-=======
-# 📁 Project Structure
->>>>>>> 4c20051 (Improve README documentation)
+# 🏗️ Project Architecture
 
 ```text
 ECOMMERCE_WEBSITE/
@@ -207,15 +128,10 @@ ECOMMERCE_WEBSITE/
 │   ├── routes/
 │   ├── services/
 │   ├── utils/
-<<<<<<< HEAD
-│   │
-=======
->>>>>>> 4c20051 (Improve README documentation)
 │   ├── app.py
 │   ├── config.py
 │   ├── extensions.py
-│   ├── requirements.txt
-│   └── ...
+│   └── requirements.txt
 │
 ├── frontend/
 │   ├── public/
@@ -224,28 +140,205 @@ ECOMMERCE_WEBSITE/
 │   │   ├── pages/
 │   │   ├── services/
 │   │   └── ...
-<<<<<<< HEAD
-│   │
-=======
->>>>>>> 4c20051 (Improve README documentation)
 │   ├── package.json
-│   ├── vite.config.js
-│   └── ...
+│   └── vite.config.js
 │
 ├── database/
-│
 ├── docs/
-│
 ├── public/
-│
 ├── screenshots/
-│
 ├── .gitignore
 ├── README.md
-<<<<<<< HEAD
 └── ...
-=======
-├── index.html
-├── package.json
-└── ...
->>>>>>> 4c20051 (Improve README documentation)
+```
+
+---
+
+# 🚀 Getting Started
+
+## 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/Harikrishna772003/ECOMMERCE_WEBSITE.git
+```
+
+## 2️⃣ Move into the Project
+
+```bash
+cd ECOMMERCE_WEBSITE
+```
+
+---
+
+# ⚙️ Backend Setup
+
+Open a terminal in:
+
+```text
+ECOMMERCE_WEBSITE\backend
+```
+
+Create and activate the virtual environment:
+
+### Windows PowerShell
+
+```powershell
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+```
+
+Install dependencies:
+
+```powershell
+pip install -r requirements.txt
+```
+
+Start the Flask server:
+
+```powershell
+python .\app.py
+```
+
+Backend server:
+
+```text
+http://127.0.0.1:5000
+```
+
+---
+
+# 🎨 Frontend Setup
+
+Open another terminal in:
+
+```text
+ECOMMERCE_WEBSITE\frontend
+```
+
+Install dependencies:
+
+```powershell
+npm install
+```
+
+Start the Vite development server:
+
+```powershell
+npm run dev
+```
+
+Vite will display the local frontend address in the terminal.
+
+---
+
+# 🔄 Application Flow
+
+```text
+                    ┌─────────────────────┐
+                    │      ShopEase        │
+                    │    E-Commerce App    │
+                    └──────────┬──────────┘
+                               │
+              ┌────────────────┴────────────────┐
+              │                                 │
+       ┌──────▼──────┐                   ┌──────▼──────┐
+       │ User Frontend│                   │ Admin Panel │
+       │ React + Vite │                   │   React     │
+       └──────┬──────┘                   └──────┬──────┘
+              │                                 │
+              └────────────────┬────────────────┘
+                               │
+                        ┌──────▼──────┐
+                        │ Flask REST  │
+                        │     API     │
+                        └──────┬──────┘
+                               │
+                        ┌──────▼──────┐
+                        │ SQLAlchemy  │
+                        │  Database   │
+                        └─────────────┘
+```
+
+---
+
+# 📁 Main Project Areas
+
+### 🛍️ Frontend
+
+The React + Vite customer interface containing reusable components, pages, services, and the shopping experience.
+
+### 👤 User
+
+The user workflow includes registration, login, profile management, browsing, cart, wishlist, checkout, orders, reviews, coupons, notifications, and invoices.
+
+### 👨‍💼 Admin
+
+The admin workflow provides management functionality for products, users, orders, coupons, reviews, and dashboard information.
+
+### ⚙️ Backend
+
+The Flask backend contains the REST API, routes, controllers, models, services, authentication, database integration, and utilities.
+
+---
+
+# 🖼️ Screenshots
+
+Application screenshots are available in the `screenshots/` directory.
+
+---
+
+# 🔐 Authentication
+
+ShopEase uses:
+
+- JWT authentication
+- Protected API routes
+- User authentication
+- Admin authentication
+- Access-token based authorization
+
+---
+
+# 🧪 Project Status
+
+| Area | Status |
+|---|---|
+| Frontend | ✅ Completed |
+| Backend | ✅ Completed |
+| Database | ✅ Configured |
+| Authentication | ✅ Implemented |
+| Product Management | ✅ Implemented |
+| Shopping Cart | ✅ Implemented |
+| Wishlist | ✅ Implemented |
+| Orders | ✅ Implemented |
+| Payments | ✅ Implemented |
+| Reviews | ✅ Implemented |
+| Coupons | ✅ Implemented |
+| Notifications | ✅ Implemented |
+| Invoice Generation | ✅ Implemented |
+| Admin Panel | ✅ Implemented |
+| Testing | ✅ Completed |
+
+---
+
+# 👨‍💻 Development
+
+The project follows a separated frontend/backend architecture:
+
+```text
+React + Vite
+      ↓
+Frontend Services
+      ↓
+Flask REST API
+      ↓
+SQLAlchemy
+      ↓
+SQL Database
+```
+
+---
+
+# 📄 License
+
+This project is intended for learning, development, and portfolio purposes.
