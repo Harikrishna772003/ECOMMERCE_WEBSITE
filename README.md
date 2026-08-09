@@ -8,19 +8,35 @@ ShopEase provides a complete online shopping experience with product browsing, a
 
 ## 🔗 Quick Navigation
 
-| Area | Link |
+| Section | Link |
 |---|---|
-| 🛍️ User Frontend | [Open Frontend](./frontend) |
-| 👤 User Pages | [Open User Pages](./frontend/src/pages) |
-| 👨‍💼 Admin Pages | [Open Admin/User Pages](./frontend/src/pages) |
-| ⚙️ Backend API | [Open Backend](./backend) |
+| 🏠 Project Overview | [View Overview](#-project-overview) |
+| 🎬 Project Demo | [View Demo](#-project-demo) |
+| 🛍️ Frontend | [Open Frontend](./frontend) |
+| 👤 User Features | [View User Features](#-user-features) |
+| 👨‍💼 Admin Features | [View Admin Features](#-admin-features) |
+| ⚙️ Backend | [Open Backend](./backend) |
 | 🗄️ Database | [Open Database](./database) |
-| 📚 Documentation | [Open Docs](./docs) |
+| 📚 Documentation | [Open Documentation](./docs) |
 | 🖼️ Screenshots | [View Screenshots](./screenshots) |
-
-> **Note:** User and Admin functionality are part of the frontend application. Their pages are organized inside `frontend/src/pages`.
+| 🚀 Getting Started | [Setup Project](#-getting-started) |
+| 🧰 Technologies | [View Technologies](#-technologies-used) |
+| 📁 Project Structure | [View Structure](#-project-structure) |
 
 ---
+> **Note:** User and Admin functionality are implemented inside the React frontend. Their pages are organized under `frontend/src/pages`.
+
+---
+## 🌐 Project Access
+
+| Application | Description |
+|---|---|
+| 🛍️ **User Application** | Customer shopping experience |
+| 👨‍💼 **Admin Panel** | Product, user, order, coupon and review management |
+| ⚙️ **Backend API** | Flask REST API |
+| 🗄️ **Database** | SQLAlchemy / SQL database |
+
+> The application currently runs locally using React + Vite and Flask.
 
 ## 📌 Project Overview
 
@@ -342,3 +358,17 @@ SQL Database
 # 📄 License
 
 This project is intended for learning, development, and portfolio purposes.
+
+---
+
+# 👨‍💻 Designed & Developed By
+
+## **HARIKRISHNA THUMULA**
+
+> 🛒 ShopEase — Full-Stack E-Commerce Website
+
+Designed and developed by **HARIKRISHNA THUMULA** using modern full-stack web technologies including **React, Vite, Python, Flask, SQLAlchemy, and SQL**.
+
+---
+
+⭐ **Thank you for visiting the ShopEase project!**
