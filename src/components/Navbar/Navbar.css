@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+    background:#131921;
+}
+
+.logo h2{
+    color:#ff9900;
+}
+
+.search input{
+    width:350px;
+    padding:10px;
+    border:none;
+    border-radius:5px;
+}
+
+.menu{
+    display:flex;
+    gap:25px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+
+.menu a:hover{
+    color:#ff9900;
+}
