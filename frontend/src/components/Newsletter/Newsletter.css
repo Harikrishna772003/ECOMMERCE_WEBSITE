@@ -1,0 +1,431 @@
+/* =========================================================
+   NEWSLETTER SECTION
+========================================================= */
+
+.newsletter {
+
+    width: 100%;
+
+    padding: 65px 6%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eff6ff,
+            #dbeafe
+        );
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.newsletter-content {
+
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   NEWSLETTER TAG
+========================================================= */
+
+.newsletter-tag {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 8px 18px;
+
+    margin-bottom: 18px;
+
+    border-radius: 30px;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.newsletter-content h2 {
+
+    margin-bottom: 15px;
+
+    color: #111827;
+
+    font-size: 40px;
+
+    line-height: 1.2;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.newsletter-content > p {
+
+    max-width: 700px;
+
+    margin: 0 auto 28px;
+
+    color: #6b7280;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   EMAIL FORM
+========================================================= */
+
+.newsletter-box {
+
+    max-width: 650px;
+
+    margin: 0 auto 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 5px;
+
+    background: #ffffff;
+
+    border: 1px solid #dbeafe;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 8px 25px rgba(37, 99, 235, 0.10);
+}
+
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.newsletter-box input {
+
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 14px 16px;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #111827;
+
+    font-size: 15px;
+}
+
+
+.newsletter-box input::placeholder {
+
+    color: #94a3b8;
+}
+
+
+/* =========================================================
+   SUBSCRIBE BUTTON
+========================================================= */
+
+.newsletter-box button {
+
+    padding: 13px 24px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.newsletter-box button:hover {
+
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 15px rgba(37, 99, 235, 0.25);
+}
+
+
+/* =========================================================
+   MESSAGE
+========================================================= */
+
+.newsletter-message {
+
+    margin: 12px 0 !important;
+
+    color: #16a34a !important;
+
+    font-size: 14px !important;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   SMALL TEXT
+========================================================= */
+
+.newsletter-content small {
+
+    display: block;
+
+    margin-top: 18px;
+
+    color: #64748b;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1400px) {
+
+    .newsletter {
+
+        padding-left: 8%;
+
+        padding-right: 8%;
+    }
+
+    .newsletter-content h2 {
+
+        font-size: 44px;
+    }
+
+    .newsletter-box {
+
+        max-width: 700px;
+    }
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .newsletter {
+
+        padding: 60px 6%;
+    }
+
+    .newsletter-content h2 {
+
+        font-size: 36px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .newsletter {
+
+        padding: 55px 20px;
+    }
+
+    .newsletter-content h2 {
+
+        font-size: 32px;
+    }
+
+    .newsletter-content > p {
+
+        font-size: 15px;
+    }
+
+    .newsletter-box {
+
+        max-width: 600px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .newsletter {
+
+        padding: 45px 20px;
+    }
+
+    .newsletter-tag {
+
+        padding: 7px 15px;
+
+        font-size: 12px;
+    }
+
+    .newsletter-content h2 {
+
+        font-size: 29px;
+    }
+
+    .newsletter-content > p {
+
+        font-size: 14px;
+
+        line-height: 1.6;
+
+        margin-bottom: 24px;
+    }
+
+    .newsletter-box {
+
+        flex-direction: column;
+
+        gap: 10px;
+
+        padding: 0;
+
+        background: transparent;
+
+        border: none;
+
+        box-shadow: none;
+    }
+
+    .newsletter-box input {
+
+        width: 100%;
+
+        padding: 14px 16px;
+
+        background: #ffffff;
+
+        border: 1px solid #dbeafe;
+
+        border-radius: 10px;
+
+        box-shadow:
+            0 5px 15px rgba(37, 99, 235, 0.08);
+    }
+
+    .newsletter-box button {
+
+        width: 100%;
+
+        padding: 14px;
+
+        border-radius: 10px;
+    }
+
+    .newsletter-content small {
+
+        font-size: 12px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .newsletter {
+
+        padding-left: 15px;
+
+        padding-right: 15px;
+    }
+
+    .newsletter-content h2 {
+
+        font-size: 26px;
+    }
+
+    .newsletter-content > p {
+
+        font-size: 13px;
+    }
+
+    .newsletter-content small {
+
+        font-size: 11px;
+    }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+.newsletter-box button:focus {
+
+    outline: 2px solid #111827;
+
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .newsletter-box button {
+
+        transition: none;
+    }
+}

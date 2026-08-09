@@ -1,0 +1,201 @@
+.order-details-page {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+    min-height: 70vh;
+}
+
+.loading {
+    text-align: center;
+    margin-top: 50px;
+    color: #1e293b;
+}
+
+/* Back Button */
+
+.back-btn {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.back-btn:hover {
+    background: #1d4ed8;
+}
+
+/* Page Heading */
+
+.order-details-page h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1e293b;
+    font-size: 32px;
+}
+
+/* Products */
+
+.products-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product-card {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.10);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.14);
+}
+
+.product-card img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-info h3 {
+    margin-bottom: 15px;
+    color: #1e293b;
+    font-size: 21px;
+}
+
+.product-info p {
+    margin: 8px 0;
+    color: #475569;
+    font-size: 16px;
+}
+
+.product-info strong {
+    margin-left: 5px;
+    color: #111827;
+}
+
+/* Order Summary */
+
+.order-summary {
+    margin-top: 35px;
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.10);
+}
+
+.order-summary h2 {
+    margin-bottom: 22px;
+    color: #1e293b;
+    font-size: 24px;
+}
+
+.order-summary p {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 14px 0;
+    font-size: 17px;
+    color: #475569;
+}
+
+.order-summary p strong {
+    color: #111827;
+    text-align: right;
+}
+
+/* Discount */
+
+.order-summary .discount strong {
+    color: #16a34a;
+}
+
+/* Final Amount */
+
+.order-summary .final-amount {
+    margin-top: 20px;
+    padding: 15px;
+    background: #eff6ff;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+.order-summary .final-amount strong {
+    color: #2563eb;
+}
+
+/* Status */
+
+.status {
+    color: #16a34a !important;
+    font-weight: bold;
+}
+
+/* Shipment */
+
+.order-summary p:last-child strong {
+    color: #2563eb;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .order-details-page {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .order-details-page h1 {
+        font-size: 27px;
+    }
+
+    .product-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .product-card img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .product-info {
+        width: 100%;
+    }
+
+    .order-summary {
+        padding: 20px;
+    }
+
+    .order-summary p {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .order-summary p strong {
+        text-align: left;
+    }
+
+    .order-summary .final-amount {
+        font-size: 21px;
+    }
+}

@@ -1,0 +1,733 @@
+/* ===================================
+   RESET
+=================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ===================================
+   PAGE
+=================================== */
+
+.checkout-page{
+
+    min-height:100vh;
+
+    background:#f8fafc;
+
+    padding:50px 5%;
+
+}
+
+/* ===================================
+   CONTAINER
+=================================== */
+
+.checkout-container{
+
+    max-width:1500px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:35px;
+
+    align-items:start;
+
+}
+
+/* ===================================
+   LEFT
+=================================== */
+
+.checkout-left{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:30px;
+
+}
+
+/* ===================================
+   RIGHT
+=================================== */
+
+.checkout-right{
+
+    position:sticky;
+
+    top:100px;
+
+}
+
+/* ===================================
+   CARD
+=================================== */
+
+.checkout-card,
+.summary-card{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+}
+
+/* ===================================
+   TITLE
+=================================== */
+
+.checkout-card h1{
+
+    font-size:38px;
+
+    color:#111827;
+
+    margin-bottom:30px;
+
+    text-align:center;
+
+}
+
+.summary-card h2{
+
+    font-size:30px;
+
+    color:#111827;
+
+    margin-bottom:30px;
+
+}
+
+/* ===================================
+   SECTION TITLE
+=================================== */
+
+.section-title{
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:#111827;
+
+    margin-bottom:18px;
+
+    margin-top:10px;
+
+}
+
+/* ===================================
+   TEXTAREA
+=================================== */
+
+.checkout-card textarea{
+
+    width:100%;
+
+    min-height:160px;
+
+    padding:18px;
+
+    border:2px solid #d1d5db;
+
+    border-radius:14px;
+
+    font-size:16px;
+
+    resize:vertical;
+
+    outline:none;
+
+    transition:.3s;
+
+    margin-bottom:35px;
+
+}
+
+.checkout-card textarea:focus{
+
+    border-color:#2563eb;
+
+}
+
+/* ===================================
+   PAYMENT
+=================================== */
+
+.payment-methods{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.payment-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:18px;
+
+    border:2px solid #e5e7eb;
+
+    border-radius:15px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    background:#ffffff;
+
+}
+
+.payment-card:hover{
+
+    border-color:#2563eb;
+
+    transform:translateY(-2px);
+
+}
+
+.payment-card input{
+
+    width:18px;
+
+    height:18px;
+
+    cursor:pointer;
+
+}
+
+.payment-card span{
+
+    font-size:17px;
+
+    font-weight:600;
+
+    color:#111827;
+
+}
+/* ===================================
+   ORDER SUMMARY
+=================================== */
+
+.summary-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:18px;
+
+    font-size:17px;
+
+    color:#374151;
+
+}
+
+.summary-row span:last-child{
+
+    font-weight:600;
+
+}
+
+.free{
+
+    color:#16a34a;
+
+    font-weight:700;
+
+}
+
+.summary-card hr{
+
+    border:none;
+
+    border-top:1px solid #e5e7eb;
+
+    margin:25px 0;
+
+}
+
+.summary-total{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#111827;
+
+    margin-bottom:30px;
+
+}
+
+/* ===================================
+   COUPON
+=================================== */
+
+.coupon-section{
+
+    margin-bottom:30px;
+
+}
+
+.coupon-section label{
+
+    display:block;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    color:#111827;
+
+    margin-bottom:12px;
+
+}
+
+.coupon-box{
+
+    display:flex;
+
+    gap:12px;
+
+}
+
+.coupon-box input{
+
+    flex:1;
+
+    padding:14px 16px;
+
+    border:2px solid #d1d5db;
+
+    border-radius:12px;
+
+    outline:none;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.coupon-box input:focus{
+
+    border-color:#2563eb;
+
+}
+
+.coupon-btn{
+
+    padding:14px 24px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#f59e0b;
+
+    color:#ffffff;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.coupon-btn:hover{
+
+    background:#d97706;
+
+    transform:translateY(-2px);
+
+}
+
+/* ===================================
+   COUPON SUCCESS
+=================================== */
+
+.coupon-success{
+
+    margin-top:15px;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    background:#dcfce7;
+
+    color:#15803d;
+
+    font-weight:600;
+
+    text-align:center;
+
+    border:1px solid #86efac;
+
+}
+
+/* ===================================
+   PLACE ORDER BUTTON
+=================================== */
+
+.place-order-btn{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#2563eb;
+
+    color:#ffffff;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.place-order-btn:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-3px);
+
+}
+
+.place-order-btn:active{
+
+    transform:scale(.98);
+
+}
+
+/* ===================================
+   INPUT FOCUS
+=================================== */
+
+textarea:focus,
+input:focus{
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.15);
+
+}
+
+/* ===================================
+   SMOOTH EFFECTS
+=================================== */
+
+.checkout-card,
+.summary-card,
+.payment-card,
+.place-order-btn,
+.coupon-btn{
+
+    transition:all .3s ease;
+
+}
+/* ===================================
+   RESPONSIVE DESIGN
+=================================== */
+
+@media (max-width:1200px){
+
+    .checkout-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .checkout-right{
+
+        position:static;
+
+    }
+
+}
+
+@media (max-width:992px){
+
+    .checkout-page{
+
+        padding:40px 30px;
+
+    }
+
+    .checkout-card,
+    .summary-card{
+
+        padding:25px;
+
+    }
+
+    .checkout-card h1{
+
+        font-size:34px;
+
+    }
+
+    .summary-card h2{
+
+        font-size:28px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .checkout-page{
+
+        padding:30px 20px;
+
+    }
+
+    .checkout-container{
+
+        gap:25px;
+
+    }
+
+    .checkout-card h1{
+
+        font-size:30px;
+
+    }
+
+    .summary-card h2{
+
+        font-size:24px;
+
+    }
+
+    .section-title{
+
+        font-size:20px;
+
+    }
+
+    .coupon-box{
+
+        flex-direction:column;
+
+    }
+
+    .coupon-btn{
+
+        width:100%;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .checkout-page{
+
+        padding:20px 15px;
+
+    }
+
+    .checkout-card,
+    .summary-card{
+
+        padding:20px;
+
+        border-radius:16px;
+
+    }
+
+    .checkout-card h1{
+
+        font-size:26px;
+
+    }
+
+    .summary-total{
+
+        font-size:20px;
+
+    }
+
+    .payment-card{
+
+        padding:15px;
+
+    }
+
+    .payment-card span{
+
+        font-size:15px;
+
+    }
+
+    .place-order-btn{
+
+        font-size:16px;
+
+        padding:15px;
+
+    }
+
+}
+
+/* ===================================
+   SCROLLBAR
+=================================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#f1f5f9;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#2563eb;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#1d4ed8;
+
+}
+
+/* ===================================
+   ANIMATIONS
+=================================== */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.checkout-card{
+
+    animation:fadeIn .5s ease;
+
+}
+
+.summary-card{
+
+    animation:fadeIn .7s ease;
+
+}
+
+/* ===================================
+   ACCESSIBILITY
+=================================== */
+
+button:focus,
+input:focus,
+textarea:focus{
+
+    outline:2px solid #2563eb;
+
+    outline-offset:2px;
+
+}
+
+/* ===================================
+   HOVER EFFECTS
+=================================== */
+
+.checkout-card:hover,
+.summary-card:hover{
+
+    box-shadow:0 18px 45px rgba(0,0,0,.12);
+
+}
+
+.payment-card:hover{
+
+    background:#f8fbff;
+
+}
+
+.place-order-btn:hover{
+
+    box-shadow:0 10px 25px rgba(37,99,235,.30);
+
+}
+
+.coupon-btn:hover{
+
+    box-shadow:0 8px 20px rgba(245,158,11,.30);
+
+}
+
+/* ===================================
+   PREMIUM LOOK
+=================================== */
+
+.checkout-card,
+.summary-card{
+
+    border:1px solid #eef2f7;
+
+    backdrop-filter:blur(8px);
+
+}

@@ -1,0 +1,606 @@
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+
+    width: 100%;
+
+    margin-top: 0;
+
+    background: #0f172a;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   FOOTER CONTAINER
+========================================================= */
+
+.footer-container {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        1.4fr
+        1fr
+        1fr
+        1.2fr;
+
+    gap: 40px;
+
+    padding: 65px 6% 45px;
+}
+
+
+/* =========================================================
+   FOOTER BOX
+========================================================= */
+
+.footer-box {
+
+    min-width: 0;
+}
+
+
+/* =========================================================
+   SHOP EASE TITLE
+========================================================= */
+
+.footer-box h2 {
+
+    margin-bottom: 18px;
+
+    color: #f59e0b;
+
+    font-size: 30px;
+
+    line-height: 1.2;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   FOOTER HEADINGS
+========================================================= */
+
+.footer-box h3 {
+
+    margin-bottom: 18px;
+
+    color: #f59e0b;
+
+    font-size: 20px;
+
+    line-height: 1.3;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   FOOTER PARAGRAPHS
+========================================================= */
+
+.footer-box p {
+
+    margin-bottom: 10px;
+
+    color: #cbd5e1;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   FOOTER LIST
+========================================================= */
+
+.footer-box ul {
+
+    list-style: none;
+
+    padding: 0;
+}
+
+
+/* =========================================================
+   FOOTER LIST ITEMS
+========================================================= */
+
+.footer-box ul li {
+
+    margin-bottom: 12px;
+
+    color: #cbd5e1;
+
+    font-size: 14px;
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* =========================================================
+   FOOTER LINKS
+========================================================= */
+
+.footer-box ul li a {
+
+    color: #cbd5e1;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+
+.footer-box ul li:hover {
+
+    color: #f59e0b;
+
+    transform: translateX(5px);
+}
+
+
+.footer-box ul li a:hover {
+
+    color: #f59e0b;
+}
+
+
+/* =========================================================
+   SOCIAL ICONS
+========================================================= */
+
+.social-icons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 22px;
+}
+
+
+.social-icons a {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #1e293b;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 19px;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.social-icons a:hover {
+
+    background: #2563eb;
+
+    transform: translateY(-4px);
+}
+
+
+/* =========================================================
+   PAYMENT SECTION
+========================================================= */
+
+.payment-section {
+
+    width: 100%;
+
+    padding: 28px 6%;
+
+    text-align: center;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+.payment-section h3 {
+
+    margin-bottom: 16px;
+
+    color: #f59e0b;
+
+    font-size: 19px;
+}
+
+
+/* =========================================================
+   PAYMENT ICONS
+========================================================= */
+
+.payment-icons {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+
+.payment-icons span {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 10px 16px;
+
+    border-radius: 8px;
+
+    background: #1e293b;
+
+    color: #cbd5e1;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.payment-icons span:hover {
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   DEVELOPER SECTION
+========================================================= */
+
+.developer-section {
+
+    padding: 25px 20px;
+
+    text-align: center;
+
+    background: #0b1220;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+.developer-section p {
+
+    margin-bottom: 6px;
+
+    color: #94a3b8;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+.developer-section strong {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #f59e0b;
+
+    font-size: 16px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   COPYRIGHT
+========================================================= */
+
+.footer-bottom {
+
+    padding: 20px;
+
+    text-align: center;
+
+    color: #94a3b8;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    background: #0f172a;
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1400px) {
+
+    .footer-container {
+
+        padding-left: 8%;
+
+        padding-right: 8%;
+
+        gap: 55px;
+    }
+
+    .footer-box h2 {
+
+        font-size: 32px;
+    }
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .footer-container {
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 35px;
+
+        padding: 55px 6% 40px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .footer-container {
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 30px;
+
+        padding: 50px 25px 35px;
+    }
+
+    .footer-box h2 {
+
+        font-size: 27px;
+    }
+
+    .footer-box h3 {
+
+        font-size: 19px;
+    }
+
+    .footer-box p {
+
+        font-size: 13px;
+    }
+
+    .footer-box ul li {
+
+        font-size: 13px;
+    }
+
+    .payment-section {
+
+        padding: 25px 20px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .footer-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        padding: 45px 20px 30px;
+
+        text-align: center;
+    }
+
+    .footer-box h2 {
+
+        font-size: 28px;
+    }
+
+    .footer-box h3 {
+
+        font-size: 20px;
+    }
+
+    .footer-box p {
+
+        font-size: 14px;
+    }
+
+    .footer-box ul li {
+
+        font-size: 14px;
+
+        margin-bottom: 11px;
+    }
+
+    .footer-box ul li:hover {
+
+        transform: none;
+    }
+
+    .social-icons {
+
+        justify-content: center;
+
+        margin-top: 18px;
+    }
+
+    .payment-section {
+
+        padding: 25px 20px;
+    }
+
+    .payment-icons {
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .payment-icons span {
+
+        width: 100%;
+
+        max-width: 250px;
+    }
+
+    .developer-section {
+
+        padding: 22px 15px;
+    }
+
+    .developer-section strong {
+
+        font-size: 15px;
+    }
+
+    .footer-bottom {
+
+        padding: 18px 15px;
+
+        font-size: 12px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .footer-container {
+
+        padding-left: 15px;
+
+        padding-right: 15px;
+    }
+
+    .footer-box h2 {
+
+        font-size: 25px;
+    }
+
+    .footer-box h3 {
+
+        font-size: 18px;
+    }
+
+    .footer-box p {
+
+        font-size: 13px;
+    }
+
+    .social-icons a {
+
+        width: 40px;
+
+        height: 40px;
+
+        font-size: 17px;
+    }
+
+    .developer-section strong {
+
+        font-size: 14px;
+    }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+.social-icons a:focus,
+.footer-box a:focus {
+
+    outline: 2px solid #f59e0b;
+
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .social-icons a,
+    .footer-box ul li,
+    .footer-box ul li a,
+    .payment-icons span {
+
+        transition: none;
+    }
+}

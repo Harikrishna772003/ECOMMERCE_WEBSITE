@@ -1,0 +1,2024 @@
+/* =========================================================
+   SHOP EASE - PRODUCTS PAGE
+   COMPLETE PRODUCTS UI
+   Replace the ENTIRE existing Products CSS with this file.
+   ========================================================= */
+
+
+/* =========================================================
+   GLOBAL RESET
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f9;
+    color: #111827;
+}
+
+
+/* =========================================================
+   PRODUCTS PAGE
+   ========================================================= */
+
+.products-page {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 35px 5% 45px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #f8fafc 0%,
+            #f4f6f9 55%,
+            #eef2f7 100%
+        );
+}
+
+
+/* =========================================================
+   PAGE HEADER
+   ========================================================= */
+
+.products-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.products-header h1 {
+    font-size: 42px;
+    font-weight: 800;
+    color: #111827;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+}
+
+.products-header p {
+    color: #6b7280;
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   FILTER BAR
+   ========================================================= */
+
+.filter-bar {
+    width: 100%;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 18px;
+
+    padding: 24px;
+
+    margin-bottom: 38px;
+
+    box-shadow:
+        0 8px 20px rgba(15, 23, 42, 0.06),
+        0 2px 6px rgba(15, 23, 42, 0.04);
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(190px, 1fr));
+
+    gap: 18px;
+
+    align-items: end;
+}
+
+
+/* =========================================================
+   FILTER ITEM
+   ========================================================= */
+
+.filter-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-item label {
+    color: #374151;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+
+/* =========================================================
+   FILTER INPUT / SELECT
+   ========================================================= */
+
+.filter-item input,
+.filter-item select {
+    width: 100%;
+    height: 46px;
+
+    padding: 0 13px;
+
+    border: 1.5px solid #d1d5db;
+
+    border-radius: 9px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #111827;
+
+    font-size: 14px;
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.filter-item input::placeholder {
+    color: #9ca3af;
+}
+
+.filter-item input:focus,
+.filter-item select:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+/* =========================================================
+   RESET BUTTON
+   ========================================================= */
+
+.filter-action {
+    display: flex;
+    align-items: flex-end;
+}
+
+.reset-btn {
+    width: 100%;
+    height: 46px;
+
+    padding: 0 18px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #ef4444;
+
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.reset-btn:hover {
+    background: #dc2626;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 15px rgba(239, 68, 68, 0.25);
+}
+
+.reset-btn:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   PRODUCTS GRID
+   ========================================================= */
+
+/*
+   DESKTOP:
+   Exactly 5 products per row.
+
+   This prevents the cards from becoming too narrow.
+*/
+
+.products-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, minmax(0, 1fr));
+
+    gap: 24px;
+
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   PRODUCT CARD
+   ========================================================= */
+
+.product-card {
+    position: relative;
+
+    width: 100%;
+    min-width: 0;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow:
+        0 5px 15px rgba(15, 23, 42, 0.07);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+
+    border-color: #dbeafe;
+
+    box-shadow:
+        0 18px 35px rgba(15, 23, 42, 0.14);
+}
+
+
+/* =========================================================
+   PRODUCT IMAGE CONTAINER
+   ========================================================= */
+
+.product-image {
+    position: relative;
+
+    width: 100%;
+
+    /*
+       All product image areas have the same shape.
+    */
+    aspect-ratio: 1 / 1;
+
+    min-height: 250px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            145deg,
+            #f8fafc,
+            #edf2f7
+        );
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 18px;
+
+    border-bottom: 1px solid #edf0f4;
+}
+
+
+/* =========================================================
+   PRODUCT IMAGE
+   ========================================================= */
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+
+    /*
+       Contain prevents product images from being cropped.
+    */
+    object-fit: contain;
+
+    object-position: center;
+
+    display: block;
+
+    position: relative;
+
+    z-index: 1;
+
+    transition:
+        transform 0.45s ease,
+        filter 0.35s ease;
+}
+
+
+/* =========================================================
+   IMAGE HOVER
+   ========================================================= */
+
+.product-card:hover .product-image img {
+    transform: scale(1.09);
+}
+
+
+/* =========================================================
+   IMAGE SHADOW
+   ========================================================= */
+
+.product-image::after {
+    content: "";
+
+    position: absolute;
+
+    left: 20%;
+    right: 20%;
+
+    bottom: 12px;
+
+    height: 18px;
+
+    border-radius: 50%;
+
+    background: rgba(15, 23, 42, 0.10);
+
+    filter: blur(12px);
+
+    opacity: 0.45;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   WISHLIST BUTTON
+   ========================================================= */
+
+.wishlist-btn {
+    position: absolute;
+
+    top: 13px;
+    right: 13px;
+
+    z-index: 10;
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.97);
+
+    color: #111827;
+
+    font-size: 19px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 15px rgba(15, 23, 42, 0.18);
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.wishlist-btn:hover {
+    transform: scale(1.12);
+
+    background: #fee2e2;
+
+    color: #dc2626;
+
+    box-shadow:
+        0 8px 18px rgba(220, 38, 38, 0.22);
+}
+
+.wishlist-btn:active {
+    transform: scale(0.95);
+}
+
+
+/* =========================================================
+   PRODUCT CONTENT
+   ========================================================= */
+
+.product-content {
+    padding: 19px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+/* =========================================================
+   CATEGORY
+   ========================================================= */
+
+.category-badge {
+    display: inline-flex;
+
+    align-items: center;
+
+    width: fit-content;
+
+    max-width: 100%;
+
+    padding: 5px 10px;
+
+    margin-bottom: 9px;
+
+    border-radius: 20px;
+
+    background: #eff6ff;
+
+    border: 1px solid #dbeafe;
+
+    color: #2563eb;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    text-transform: lowercase;
+}
+
+
+/* =========================================================
+   PRODUCT TITLE
+   ========================================================= */
+
+.product-content h2 {
+    font-size: 19px;
+
+    line-height: 1.3;
+
+    font-weight: 750;
+
+    color: #111827;
+
+    margin-bottom: 9px;
+
+    cursor: pointer;
+
+    display: -webkit-box;
+
+    -webkit-line-clamp: 2;
+
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+
+    transition: color 0.25s ease;
+}
+
+.product-content h2:hover {
+    color: #2563eb;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.description {
+    color: #6b7280;
+
+    font-size: 12px;
+
+    line-height: 1.55;
+
+    margin-bottom: 14px;
+
+    display: -webkit-box;
+
+    -webkit-line-clamp: 3;
+
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+
+    min-height: 56px;
+}
+
+
+/* =========================================================
+   PRICE
+   ========================================================= */
+
+.product-content h3 {
+    color: #f59e0b;
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+    margin-bottom: 13px;
+}
+
+
+/* =========================================================
+   STOCK BADGE
+   ========================================================= */
+
+.stock-badge {
+    width: 100%;
+
+    min-height: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 7px 10px;
+
+    border-radius: 7px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    text-align: center;
+
+    margin-bottom: 16px;
+
+    border: 1px solid transparent;
+}
+
+
+/* =========================================================
+   IN STOCK
+   ========================================================= */
+
+.stock-badge.in {
+    background: #dcfce7;
+
+    color: #15803d;
+
+    border-color: #bbf7d0;
+}
+
+
+/* =========================================================
+   LOW STOCK
+   ========================================================= */
+
+.stock-badge.low {
+    background: #fef3c7;
+
+    color: #b45309;
+
+    border-color: #fde68a;
+}
+
+
+/* =========================================================
+   OUT OF STOCK
+   ========================================================= */
+
+.stock-badge.out {
+    background: #fee2e2;
+
+    color: #dc2626;
+
+    border-color: #fecaca;
+}
+
+
+/* =========================================================
+   BUTTON CONTAINER
+   ========================================================= */
+
+.card-buttons {
+    width: 100%;
+
+    margin-top: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 9px;
+}
+
+
+/* =========================================================
+   COMMON CARD BUTTONS
+   ========================================================= */
+
+.cart-btn,
+.details-btn {
+    width: 100%;
+
+    min-height: 40px;
+
+    padding: 9px 8px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* =========================================================
+   ADD TO CART
+   ========================================================= */
+
+.cart-btn {
+    background: #f59e0b;
+
+    color: #ffffff;
+}
+
+.cart-btn:hover {
+    background: #d97706;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 12px rgba(245, 158, 11, 0.25);
+}
+
+.cart-btn:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   DISABLED CART
+   ========================================================= */
+
+.cart-btn:disabled {
+    background: #9ca3af;
+
+    color: #f3f4f6;
+
+    cursor: not-allowed;
+
+    transform: none;
+
+    box-shadow: none;
+}
+
+
+/* =========================================================
+   VIEW DETAILS
+   ========================================================= */
+
+.details-btn {
+    background: #2563eb;
+
+    color: #ffffff;
+}
+
+.details-btn:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 12px rgba(37, 99, 235, 0.25);
+}
+
+.details-btn:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   NO PRODUCTS
+   ========================================================= */
+
+.no-products {
+    grid-column: 1 / -1;
+
+    width: 100%;
+
+    background: #ffffff;
+
+    padding: 80px 40px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    border: 1px solid #e5e7eb;
+
+    box-shadow:
+        0 10px 25px rgba(15, 23, 42, 0.07);
+}
+
+.no-products h2 {
+    font-size: 32px;
+
+    color: #374151;
+
+    margin-bottom: 10px;
+}
+
+.no-products p {
+    color: #6b7280;
+
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   PAGINATION
+   ========================================================= */
+
+.pagination {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin: 42px 0 10px;
+
+    flex-wrap: wrap;
+}
+
+
+/* =========================================================
+   PAGINATION BUTTON
+   ========================================================= */
+
+.pagination button {
+    min-width: 42px;
+
+    height: 42px;
+
+    padding: 0 13px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.pagination button:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 12px rgba(37, 99, 235, 0.2);
+}
+
+.pagination button:disabled {
+    background: #cbd5e1;
+
+    color: #64748b;
+
+    cursor: not-allowed;
+
+    transform: none;
+
+    box-shadow: none;
+}
+
+.pagination .active {
+    background: #f59e0b;
+
+    color: #ffffff;
+
+    box-shadow:
+        0 5px 12px rgba(245, 158, 11, 0.22);
+}
+
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e5e7eb;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #94a3b8;
+
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+   5 PRODUCTS PER ROW
+   ========================================================= */
+
+@media (min-width: 1400px) {
+
+    .products-page {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .products-grid {
+        grid-template-columns:
+            repeat(5, minmax(0, 1fr));
+
+        gap: 26px;
+    }
+
+    .product-image {
+        min-height: 270px;
+    }
+
+    .product-content {
+        padding: 20px;
+    }
+}
+
+
+/* =========================================================
+   DESKTOP / LAPTOP
+   5 PRODUCTS PER ROW
+   ========================================================= */
+
+@media (max-width: 1399px) and (min-width: 1101px) {
+
+    .products-grid {
+        grid-template-columns:
+            repeat(5, minmax(0, 1fr));
+
+        gap: 20px;
+    }
+
+    .product-image {
+        min-height: 230px;
+    }
+
+    .product-content {
+        padding: 16px;
+    }
+
+    .product-content h2 {
+        font-size: 17px;
+    }
+
+    .description {
+        font-size: 11px;
+    }
+
+    .product-content h3 {
+        font-size: 20px;
+    }
+
+    .cart-btn,
+    .details-btn {
+        font-size: 11px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+   4 PRODUCTS PER ROW
+   ========================================================= */
+
+@media (max-width: 1100px) and (min-width: 901px) {
+
+    .products-page {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .products-grid {
+        grid-template-columns:
+            repeat(4, minmax(0, 1fr));
+
+        gap: 18px;
+    }
+
+    .product-image {
+        min-height: 220px;
+    }
+
+    .product-content {
+        padding: 16px;
+    }
+
+    .product-content h2 {
+        font-size: 17px;
+    }
+
+    .description {
+        font-size: 11px;
+    }
+
+    .product-content h3 {
+        font-size: 20px;
+    }
+}
+
+
+/* =========================================================
+   SMALL TABLET
+   3 PRODUCTS PER ROW
+   ========================================================= */
+
+@media (max-width: 900px) and (min-width: 651px) {
+
+    .products-page {
+        padding: 28px 3%;
+    }
+
+    .products-grid {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+        gap: 18px;
+    }
+
+    .filter-bar {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .products-header h1 {
+        font-size: 36px;
+    }
+
+    .product-image {
+        min-height: 220px;
+    }
+
+    .product-content {
+        padding: 16px;
+    }
+
+    .product-content h2 {
+        font-size: 18px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   1 PRODUCT PER ROW
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    .products-page {
+        padding: 25px 18px 40px;
+    }
+
+    .products-header {
+        margin-bottom: 25px;
+    }
+
+    .products-header h1 {
+        font-size: 31px;
+    }
+
+    .products-header p {
+        font-size: 15px;
+    }
+
+    .filter-bar {
+        grid-template-columns: 1fr;
+
+        padding: 18px;
+
+        gap: 14px;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .product-image {
+        min-height: 300px;
+
+        aspect-ratio: 1 / 1;
+
+        padding: 20px;
+    }
+
+    .product-content {
+        padding: 19px;
+    }
+
+    .product-content h2 {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 13px;
+
+        min-height: auto;
+
+        -webkit-line-clamp: 4;
+    }
+
+    .product-content h3 {
+        font-size: 23px;
+    }
+
+    .card-buttons {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+    .products-page {
+        padding: 20px 12px 35px;
+    }
+
+    .products-header h1 {
+        font-size: 27px;
+    }
+
+    .product-image {
+        min-height: 270px;
+
+        padding: 18px;
+    }
+
+    .wishlist-btn {
+        width: 38px;
+        height: 38px;
+
+        top: 11px;
+        right: 11px;
+
+        font-size: 17px;
+    }
+
+    .product-content {
+        padding: 16px;
+    }
+
+    .product-content h2 {
+        font-size: 18px;
+    }
+
+    .product-content h3 {
+        font-size: 22px;
+    }
+
+    .card-buttons {
+        grid-template-columns: 1fr;
+
+        gap: 8px;
+    }
+
+    .pagination {
+        gap: 5px;
+    }
+
+    .pagination button {
+        min-width: 38px;
+
+        height: 38px;
+
+        padding: 0 9px;
+
+        font-size: 12px;
+    }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+    outline: 3px solid rgba(37, 99, 235, 0.25);
+
+    outline-offset: 2px;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+
+        transition-duration: 0.01ms !important;
+
+        animation-duration: 0.01ms !important;
+
+        animation-iteration-count: 1 !important;
+    }
+}
+/* =========================================================
+   SHOP EASE - ENHANCED FILTER SECTION
+   Added on top of the existing Products CSS.
+   Existing product-card, image, wishlist, pagination and
+   responsive styles are preserved.
+   ========================================================= */
+
+.filter-bar {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.25fr 1.15fr 0.9fr 0.9fr 0.95fr 1.05fr 1.12fr;
+    gap: 14px;
+    align-items: end;
+    padding: 22px;
+    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0.98);
+    border: 1px solid #dbe4f0;
+    border-radius: 16px;
+    box-shadow:
+        0 10px 28px rgba(15, 23, 42, 0.07),
+        0 2px 7px rgba(15, 23, 42, 0.04);
+}
+
+.filter-bar::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 3px;
+    border-radius: 16px 16px 0 0;
+    background: linear-gradient(90deg, #2563eb, #60a5fa, #f59e0b);
+    pointer-events: none;
+}
+
+.filter-item {
+    min-width: 0;
+    gap: 0;
+}
+
+.filter-item label {
+    display: block;
+    margin: 0 0 7px;
+    padding-left: 2px;
+    color: #334155;
+    font-size: 11px;
+    line-height: 1.2;
+    font-weight: 800;
+    letter-spacing: 0.45px;
+    text-transform: uppercase;
+}
+
+.filter-item input,
+.filter-item select {
+    width: 100%;
+    height: 44px;
+    min-width: 0;
+    padding: 0 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 9px;
+    background: #ffffff;
+    color: #0f172a;
+    font-size: 12px;
+    font-weight: 600;
+    outline: none;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.filter-item input:hover,
+.filter-item select:hover {
+    border-color: #94a3b8;
+    background: #f8fafc;
+}
+
+.filter-item input:focus,
+.filter-item select:focus {
+    border-color: #2563eb;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.11);
+}
+
+.filter-item input::placeholder {
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+.filter-item input[type="number"] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+.filter-item input[type="number"]::-webkit-inner-spin-button,
+.filter-item input[type="number"]::-webkit-outer-spin-button {
+    margin: 0;
+    opacity: 0.55;
+}
+
+.filter-item select {
+    cursor: pointer;
+}
+
+.filter-action {
+    width: 100%;
+    min-width: 0;
+    display: flex;
+    align-items: flex-end;
+}
+
+.reset-btn {
+    width: 100%;
+    height: 44px;
+    min-width: 0;
+    padding: 0 15px;
+    border: 1px solid #ef4444;
+    border-radius: 9px;
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.15px;
+    cursor: pointer;
+    white-space: nowrap;
+    box-shadow: 0 5px 12px rgba(239, 68, 68, 0.16);
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+.reset-btn:hover {
+    background: linear-gradient(135deg, #dc2626, #b91c1c);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(220, 38, 38, 0.22);
+}
+
+.reset-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 8px rgba(220, 38, 38, 0.16);
+}
+
+.filter-bar + * {
+    min-width: 0;
+}
+
+/* Better spacing for the result-count text immediately below filters. */
+.filter-bar ~ p {
+    color: #64748b;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* =========================================================
+   FILTER RESPONSIVENESS
+   ========================================================= */
+
+@media (max-width: 1250px) and (min-width: 901px) {
+    .filter-bar {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .filter-action {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 900px) and (min-width: 651px) {
+    .filter-bar {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .filter-action {
+        grid-column: span 2;
+    }
+
+    .reset-btn {
+        height: 44px;
+    }
+}
+
+@media (max-width: 650px) {
+    .filter-bar {
+        grid-template-columns: 1fr;
+        gap: 13px;
+        padding: 18px;
+        margin-bottom: 25px;
+        border-radius: 14px;
+    }
+
+    .filter-bar::after {
+        border-radius: 14px 14px 0 0;
+    }
+
+    .filter-item label {
+        font-size: 10px;
+        margin-bottom: 6px;
+    }
+
+    .filter-item input,
+    .filter-item select,
+    .reset-btn {
+        height: 46px;
+        font-size: 13px;
+    }
+
+    .filter-action {
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 420px) {
+    .filter-bar {
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .filter-item input,
+    .filter-item select,
+    .reset-btn {
+        height: 44px;
+    }
+}
+
+
+/* =========================================================
+   PRODUCT CARD UI ENHANCEMENT
+   Added on top of the existing Products CSS
+   ========================================================= */
+
+
+/* =========================================================
+   CARD STRUCTURE
+   ========================================================= */
+
+.product-card {
+    min-height: 100%;
+    isolation: isolate;
+    backface-visibility: hidden;
+    transform-origin: center bottom;
+}
+
+.product-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    border: 1px solid transparent;
+    transition: border-color 0.3s ease;
+    z-index: 5;
+}
+
+.product-card:hover::after {
+    border-color: rgba(37, 99, 235, 0.14);
+}
+
+
+/* =========================================================
+   IMAGE AREA
+   ========================================================= */
+
+.product-image {
+    position: relative;
+    min-height: 280px;
+    aspect-ratio: 1 / 1;
+
+    background:
+        radial-gradient(
+            circle at 50% 45%,
+            #ffffff 0%,
+            #f8fafc 42%,
+            #edf2f7 100%
+        );
+
+    padding: 24px;
+
+    isolation: isolate;
+}
+
+.product-image::before {
+    content: "";
+    position: absolute;
+
+    width: 170px;
+    height: 170px;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255,255,255,0.95) 0%,
+            rgba(255,255,255,0.45) 48%,
+            rgba(255,255,255,0) 72%
+        );
+
+    pointer-events: none;
+    z-index: 0;
+}
+
+
+/* =========================================================
+   PRODUCT IMAGE ITSELF
+   ========================================================= */
+
+.product-image img {
+    width: 88%;
+    height: 88%;
+
+    max-width: 230px;
+    max-height: 230px;
+
+    object-fit: contain;
+    object-position: center;
+
+    display: block;
+
+    position: relative;
+    z-index: 2;
+
+    border-radius: 12px;
+
+    filter:
+        drop-shadow(
+            0 12px 15px rgba(15, 23, 42, 0.10)
+        );
+
+    transition:
+        transform 0.4s cubic-bezier(.2,.7,.2,1),
+        filter 0.4s ease;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.07);
+
+    filter:
+        drop-shadow(
+            0 18px 20px rgba(15, 23, 42, 0.16)
+        );
+}
+
+
+/* =========================================================
+   WISHLIST BUTTON ON IMAGE
+   ========================================================= */
+
+.product-image .wishlist-btn {
+    position: absolute;
+
+    top: 14px;
+    right: 14px;
+
+    width: 43px;
+    height: 43px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 10;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.97);
+
+    border: 1px solid #e2e8f0;
+
+    color: #475569;
+
+    font-size: 19px;
+    line-height: 1;
+
+    box-shadow:
+        0 7px 18px rgba(15, 23, 42, 0.15);
+
+    backdrop-filter: blur(7px);
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.product-image .wishlist-btn:hover {
+    transform: scale(1.12);
+
+    background: #fff1f2;
+
+    color: #e11d48;
+
+    box-shadow:
+        0 9px 20px rgba(225, 29, 72, 0.20);
+}
+
+.product-image .wishlist-btn:active {
+    transform: scale(0.94);
+}
+
+
+/* =========================================================
+   PRODUCT CONTENT
+   ========================================================= */
+
+.product-content {
+    padding: 21px;
+
+    min-height: 275px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #ffffff;
+}
+
+
+/* =========================================================
+   CATEGORY BADGE
+   ========================================================= */
+
+.category-badge {
+    min-height: 27px;
+
+    display: inline-flex;
+    align-items: center;
+
+    width: fit-content;
+    max-width: 100%;
+
+    padding: 5px 11px;
+
+    margin-bottom: 10px;
+
+    border-radius: 20px;
+
+    background: #eff6ff;
+
+    border: 1px solid #dbeafe;
+
+    color: #2563eb;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 0.35px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* =========================================================
+   PRODUCT TITLE
+   ========================================================= */
+
+.product-content h2 {
+    min-height: 46px;
+
+    margin-bottom: 9px;
+
+    display: -webkit-box;
+
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+
+    overflow: hidden;
+
+    line-height: 1.3;
+
+    cursor: pointer;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.product-content h2:hover {
+    color: #2563eb;
+
+    transform: translateX(2px);
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.product-content .description {
+    min-height: 56px;
+
+    margin-bottom: 10px;
+
+    display: -webkit-box;
+
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+
+    overflow: hidden;
+
+    line-height: 1.55;
+}
+
+
+/* =========================================================
+   PRICE
+   ========================================================= */
+
+.product-content h3 {
+    min-height: 34px;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 10px;
+
+    letter-spacing: 0.2px;
+}
+
+
+/* =========================================================
+   STOCK BADGE
+   ========================================================= */
+
+.product-content .stock-badge {
+    min-height: 31px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 13px;
+
+    padding: 7px 10px;
+
+    border-radius: 8px;
+
+    font-size: 11px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.product-card:hover .stock-badge {
+    box-shadow:
+        0 4px 10px rgba(15, 23, 42, 0.06);
+}
+
+
+/* =========================================================
+   CARD BUTTONS
+   ========================================================= */
+
+.card-buttons {
+    margin-top: auto;
+
+    min-height: 42px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+}
+
+.cart-btn,
+.details-btn {
+    position: relative;
+
+    min-height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    white-space: nowrap;
+
+    border-radius: 9px;
+
+    font-size: 12px;
+
+    box-shadow:
+        0 3px 8px rgba(15, 23, 42, 0.08);
+}
+
+.cart-btn::before,
+.details-btn::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 70%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,0.28),
+            transparent
+        );
+
+    transform: skewX(-20deg);
+
+    transition: left 0.5s ease;
+}
+
+.cart-btn:hover::before,
+.details-btn:hover::before {
+    left: 140%;
+}
+
+.cart-btn:hover {
+    box-shadow:
+        0 8px 16px rgba(245, 158, 11, 0.24);
+}
+
+.details-btn:hover {
+    box-shadow:
+        0 8px 16px rgba(37, 99, 235, 0.22);
+}
+
+.cart-btn:disabled {
+    box-shadow: none;
+}
+
+
+/* =========================================================
+   IMAGE + CARD RESPONSIVENESS
+   ========================================================= */
+
+@media (min-width: 1201px) {
+
+    .product-image {
+        min-height: 290px;
+    }
+
+    .product-image img {
+        max-width: 235px;
+        max-height: 235px;
+    }
+
+    .product-content {
+        min-height: 280px;
+    }
+}
+
+
+@media (max-width: 1200px) and (min-width: 901px) {
+
+    .product-image {
+        min-height: 255px;
+        padding: 20px;
+    }
+
+    .product-image img {
+        max-width: 205px;
+        max-height: 205px;
+    }
+
+    .product-content {
+        min-height: 270px;
+        padding: 18px;
+    }
+}
+
+
+@media (max-width: 900px) and (min-width: 651px) {
+
+    .product-image {
+        min-height: 250px;
+    }
+
+    .product-image img {
+        max-width: 195px;
+        max-height: 195px;
+    }
+
+    .product-content {
+        min-height: 270px;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .product-image {
+        min-height: 300px;
+        padding: 22px;
+    }
+
+    .product-image img {
+        width: 82%;
+        height: 82%;
+
+        max-width: 245px;
+        max-height: 245px;
+    }
+
+    .product-image .wishlist-btn {
+        width: 42px;
+        height: 42px;
+
+        top: 13px;
+        right: 13px;
+    }
+
+    .product-content {
+        min-height: auto;
+        padding: 19px;
+    }
+
+    .product-content h2 {
+        min-height: auto;
+    }
+
+    .product-content .description {
+        min-height: auto;
+    }
+}
+
+
+@media (max-width: 420px) {
+
+    .product-image {
+        min-height: 275px;
+        padding: 18px;
+    }
+
+    .product-image img {
+        width: 80%;
+        height: 80%;
+
+        max-width: 220px;
+        max-height: 220px;
+    }
+
+    .product-image .wishlist-btn {
+        width: 39px;
+        height: 39px;
+
+        top: 11px;
+        right: 11px;
+
+        font-size: 17px;
+    }
+
+    .product-content {
+        padding: 16px;
+    }
+
+    .card-buttons {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+}
+
+
+/* =========================================================
+   TOUCH DEVICES
+   ========================================================= */
+
+@media (hover: none) {
+
+    .product-card:hover {
+        transform: none;
+    }
+
+    .product-card:hover .product-image img {
+        transform: none;
+    }
+
+    .product-image .wishlist-btn:hover {
+        transform: none;
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION COMPATIBILITY
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .product-card,
+    .product-card:hover,
+    .product-image img,
+    .product-image .wishlist-btn,
+    .cart-btn,
+    .details-btn {
+        transition: none !important;
+        transform: none !important;
+    }
+}
+
+
+/* =========================================================
+   END PRODUCT CARD ENHANCEMENT
+   ========================================================= */

@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.admin-login-page{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f5f7fb;
+}
+
+.admin-login-card{
+
+    width:420px;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.admin-login-card h1{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+    color:#111827;
+
+}
+
+.admin-login-card form{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.admin-login-card input{
+
+    padding:14px;
+
+    margin-bottom:20px;
+
+    border:2px solid #ddd;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+}
+
+.admin-login-card input:focus{
+
+    outline:none;
+
+    border-color:#2563eb;
+
+}
+
+.admin-login-card button{
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#2563eb;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+.admin-login-card button:hover{
+
+    background:#1d4ed8;
+
+}

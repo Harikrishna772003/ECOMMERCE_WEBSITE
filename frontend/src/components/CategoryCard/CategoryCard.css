@@ -1,0 +1,431 @@
+/* =========================================================
+   CATEGORY SECTION
+========================================================= */
+
+.categories {
+
+    width: 100%;
+
+    padding: 55px 6% 45px;
+
+    background: #f8fafc;
+}
+
+
+/* =========================================================
+   CATEGORY HEADER
+========================================================= */
+
+.category-header {
+
+    text-align: center;
+
+    margin-bottom: 38px;
+}
+
+.category-header h2 {
+
+    font-size: 40px;
+
+    line-height: 1.2;
+
+    color: #111827;
+
+    font-weight: 800;
+
+    margin-bottom: 10px;
+}
+
+.category-header p {
+
+    font-size: 17px;
+
+    color: #6b7280;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   CATEGORY GRID
+   DESKTOP = 3 × 2
+========================================================= */
+
+.category-grid {
+
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 24px;
+}
+
+
+/* =========================================================
+   CATEGORY CARD
+========================================================= */
+
+.category-card {
+
+    min-height: 275px;
+
+    padding: 30px 24px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 22px rgba(15, 23, 42, 0.07);
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+.category-card:hover {
+
+    transform: translateY(-7px);
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #1d4ed8
+        );
+
+    box-shadow:
+        0 18px 35px rgba(37, 99, 235, 0.22);
+}
+
+
+/* =========================================================
+   CATEGORY ICON
+========================================================= */
+
+.category-icon {
+
+    width: 82px;
+
+    height: 82px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 18px;
+
+    border-radius: 50%;
+
+    background: #eff6ff;
+
+    font-size: 38px;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+.category-card:hover .category-icon {
+
+    background: #ffffff;
+
+    transform: scale(1.08);
+}
+
+
+/* =========================================================
+   CATEGORY TITLE
+========================================================= */
+
+.category-card h3 {
+
+    margin-bottom: 8px;
+
+    color: #111827;
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+.category-card:hover h3 {
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   CATEGORY PRODUCT COUNT
+========================================================= */
+
+.category-card p {
+
+    margin-bottom: 18px;
+
+    color: #6b7280;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    transition: 0.3s ease;
+}
+
+.category-card:hover p {
+
+    color: #e5e7eb;
+}
+
+
+/* =========================================================
+   EXPLORE BUTTON
+========================================================= */
+
+.category-card button {
+
+    min-width: 135px;
+
+    padding: 10px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #f59e0b;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.category-card button:hover {
+
+    background: #d97706;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1400px) {
+
+    .categories {
+
+        padding-left: 8%;
+
+        padding-right: 8%;
+    }
+
+    .category-grid {
+
+        max-width: 1300px;
+
+        gap: 28px;
+    }
+
+    .category-card {
+
+        min-height: 285px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .categories {
+
+        padding: 50px 5% 40px;
+    }
+
+    .category-header {
+
+        margin-bottom: 32px;
+    }
+
+    .category-header h2 {
+
+        font-size: 34px;
+    }
+
+    .category-header p {
+
+        font-size: 16px;
+    }
+
+    .category-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 20px;
+    }
+
+    .category-card {
+
+        min-height: 260px;
+
+        padding: 28px 20px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .categories {
+
+        padding: 42px 20px 35px;
+    }
+
+    .category-header {
+
+        margin-bottom: 28px;
+    }
+
+    .category-header h2 {
+
+        font-size: 30px;
+
+        margin-bottom: 8px;
+    }
+
+    .category-header p {
+
+        font-size: 15px;
+
+        line-height: 1.5;
+    }
+
+    .category-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+    .category-card {
+
+        min-height: 240px;
+
+        padding: 28px 20px;
+    }
+
+    .category-icon {
+
+        width: 76px;
+
+        height: 76px;
+
+        font-size: 35px;
+    }
+
+    .category-card h3 {
+
+        font-size: 21px;
+    }
+
+    .category-card button {
+
+        min-width: 145px;
+
+        padding: 11px 20px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .categories {
+
+        padding-left: 15px;
+
+        padding-right: 15px;
+    }
+
+    .category-header h2 {
+
+        font-size: 27px;
+    }
+
+    .category-header p {
+
+        font-size: 14px;
+    }
+
+    .category-card {
+
+        min-height: 225px;
+    }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+.category-card button:focus {
+
+    outline: 2px solid #2563eb;
+
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .category-card,
+    .category-icon,
+    .category-card button {
+
+        transition: none;
+    }
+}

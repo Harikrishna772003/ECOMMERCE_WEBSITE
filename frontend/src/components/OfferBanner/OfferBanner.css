@@ -1,0 +1,545 @@
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   OFFER BANNER
+========================================================= */
+
+.offer-banner {
+
+    width: 100%;
+
+    padding: 65px 6%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 55px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0f172a 0%,
+            #1e3a8a 50%,
+            #2563eb 100%
+        );
+
+    color: #ffffff;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   LEFT CONTENT
+========================================================= */
+
+.offer-left {
+
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+/* =========================================================
+   OFFER TAG
+========================================================= */
+
+.offer-tag {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 9px 18px;
+
+    margin-bottom: 20px;
+
+    border-radius: 30px;
+
+    background: #ef4444;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 6px 15px rgba(239, 68, 68, 0.25);
+}
+
+
+/* =========================================================
+   OFFER TITLE
+========================================================= */
+
+.offer-left h1 {
+
+    margin-bottom: 15px;
+
+    color: #fbbf24;
+
+    font-size: 52px;
+
+    line-height: 1.1;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   OFFER DESCRIPTION
+========================================================= */
+
+.offer-left p {
+
+    max-width: 570px;
+
+    margin-bottom: 28px;
+
+    color: #e5e7eb;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   COUNTDOWN
+========================================================= */
+
+.countdown {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 28px;
+
+    flex-wrap: wrap;
+}
+
+
+.countdown div {
+
+    width: 92px;
+
+    min-height: 88px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 12px;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 14px;
+
+    background:
+        rgba(255, 255, 255, 0.12);
+
+    backdrop-filter: blur(10px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+.countdown h2 {
+
+    margin-bottom: 4px;
+
+    color: #fbbf24;
+
+    font-size: 30px;
+
+    line-height: 1;
+
+    font-weight: 800;
+}
+
+
+.countdown span {
+
+    color: #e5e7eb;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   SHOP BUTTON
+========================================================= */
+
+.offer-left button {
+
+    min-width: 155px;
+
+    padding: 13px 26px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #f59e0b;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.offer-left button:hover {
+
+    background: #d97706;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(217, 119, 6, 0.25);
+}
+
+
+/* =========================================================
+   RIGHT IMAGE
+========================================================= */
+
+.offer-right {
+
+    flex: 1;
+
+    min-width: 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+.offer-right img {
+
+    width: 100%;
+
+    max-width: 500px;
+
+    height: 310px;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.35);
+
+    transition:
+        transform 0.4s ease;
+}
+
+
+.offer-right img:hover {
+
+    transform: scale(1.03);
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1400px) {
+
+    .offer-banner {
+
+        padding-left: 8%;
+
+        padding-right: 8%;
+
+        gap: 70px;
+    }
+
+    .offer-left h1 {
+
+        font-size: 58px;
+    }
+
+    .offer-right img {
+
+        max-width: 540px;
+
+        height: 330px;
+    }
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1150px) {
+
+    .offer-banner {
+
+        padding: 60px 5%;
+
+        gap: 40px;
+    }
+
+    .offer-left h1 {
+
+        font-size: 46px;
+    }
+
+    .offer-left p {
+
+        font-size: 17px;
+    }
+
+    .offer-right img {
+
+        height: 280px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .offer-banner {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 55px 6%;
+
+        gap: 40px;
+    }
+
+    .offer-left,
+    .offer-right {
+
+        width: 100%;
+    }
+
+    .offer-left {
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .offer-left p {
+
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+    .countdown {
+
+        justify-content: center;
+    }
+
+    .offer-right img {
+
+        max-width: 520px;
+
+        height: 300px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .offer-banner {
+
+        padding: 45px 20px;
+
+        gap: 30px;
+    }
+
+    .offer-tag {
+
+        margin-bottom: 16px;
+
+        padding: 8px 15px;
+
+        font-size: 12px;
+    }
+
+    .offer-left h1 {
+
+        font-size: 36px;
+
+        line-height: 1.15;
+    }
+
+    .offer-left p {
+
+        margin-bottom: 24px;
+
+        font-size: 15px;
+
+        line-height: 1.6;
+    }
+
+    .countdown {
+
+        gap: 10px;
+
+        margin-bottom: 24px;
+    }
+
+    .countdown div {
+
+        width: 82px;
+
+        min-height: 78px;
+
+        padding: 10px;
+    }
+
+    .countdown h2 {
+
+        font-size: 25px;
+    }
+
+    .countdown span {
+
+        font-size: 11px;
+    }
+
+    .offer-left button {
+
+        width: 100%;
+
+        max-width: 260px;
+
+        padding: 13px 20px;
+    }
+
+    .offer-right img {
+
+        width: 100%;
+
+        height: 240px;
+
+        border-radius: 18px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .offer-banner {
+
+        padding: 40px 15px;
+    }
+
+    .offer-left h1 {
+
+        font-size: 31px;
+    }
+
+    .offer-left p {
+
+        font-size: 14px;
+    }
+
+    .countdown {
+
+        gap: 7px;
+    }
+
+    .countdown div {
+
+        width: 75px;
+
+        min-height: 72px;
+    }
+
+    .countdown h2 {
+
+        font-size: 22px;
+    }
+
+    .offer-right img {
+
+        height: 210px;
+    }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+.offer-left button:focus {
+
+    outline: 2px solid #ffffff;
+
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .offer-left button,
+    .offer-right img {
+
+        transition: none;
+    }
+}

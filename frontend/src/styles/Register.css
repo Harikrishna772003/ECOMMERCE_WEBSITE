@@ -1,0 +1,532 @@
+/* ==========================
+   REGISTER PAGE
+========================== */
+
+.register-page {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        radial-gradient(
+            circle at top left,
+            #eaf1ff,
+            transparent 45%
+        ),
+        radial-gradient(
+            circle at bottom right,
+            #fff7ed,
+            transparent 45%
+        ),
+        #f4f7fb;
+
+    padding: 30px 20px;
+
+    box-sizing: border-box;
+
+    position: relative;
+}
+
+
+/* ==========================
+   REGISTER BOX
+========================== */
+
+.register-box {
+    width: 100%;
+    max-width: 900px;
+
+    min-height: 520px;
+
+    display: flex;
+
+    background: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.12);
+
+    border: 1px solid #e5e7eb;
+}
+
+
+/* ==========================
+   LEFT SECTION
+========================== */
+
+.register-left {
+    width: 42%;
+
+    padding: 50px 45px;
+
+    background: linear-gradient(
+        145deg,
+        #2563eb,
+        #3b82f6
+    );
+
+    color: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* Decorative circles */
+
+.register-left::before {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    top: -80px;
+    right: -60px;
+}
+
+
+.register-left::after {
+    content: "";
+
+    position: absolute;
+
+    width: 140px;
+    height: 140px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.07);
+
+    bottom: -70px;
+    left: -50px;
+}
+
+
+/* ==========================
+   REGISTER LOGO
+========================== */
+
+.register-logo {
+    width: 54px;
+    height: 54px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    border-radius: 13px;
+
+    font-size: 24px;
+
+    margin-bottom: 25px;
+
+    position: relative;
+
+    z-index: 1;
+}
+
+
+/* ==========================
+   LEFT HEADING
+========================== */
+
+.register-left h1 {
+    margin: 0 0 12px;
+
+    font-size: 34px;
+
+    font-weight: 700;
+
+    letter-spacing: -0.5px;
+
+    position: relative;
+
+    z-index: 1;
+}
+
+
+.register-left p {
+    margin: 0 0 28px;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    color: rgba(255, 255, 255, 0.92);
+
+    max-width: 280px;
+
+    position: relative;
+
+    z-index: 1;
+}
+
+
+/* ==========================
+   FEATURES
+========================== */
+
+.register-features {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    position: relative;
+
+    z-index: 1;
+}
+
+
+.register-feature {
+    width: fit-content;
+
+    padding: 8px 13px;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    border-radius: 8px;
+
+    font-size: 13px;
+
+    transition: 0.2s ease;
+}
+
+
+.register-feature:hover {
+    background: rgba(255, 255, 255, 0.2);
+
+    transform: translateX(3px);
+}
+
+
+/* ==========================
+   RIGHT SECTION
+========================== */
+
+.register-right {
+    width: 58%;
+
+    padding: 45px 55px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    box-sizing: border-box;
+}
+
+
+/* ==========================
+   RIGHT HEADING
+========================== */
+
+.register-right h2 {
+    margin: 0 0 7px;
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+    color: #111827;
+}
+
+
+.register-subtitle {
+    margin: 0 0 27px;
+
+    font-size: 13px;
+
+    color: #6b7280;
+}
+
+
+/* ==========================
+   INPUT GROUP
+========================== */
+
+.register-input-group {
+    margin-bottom: 16px;
+}
+
+
+.register-input-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    color: #374151;
+}
+
+
+/* ==========================
+   INPUT
+========================== */
+
+.register-box input {
+    width: 100%;
+
+    height: 43px;
+
+    padding: 11px 13px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    background: #f9fafb;
+
+    color: #111827;
+
+    font-size: 13px;
+
+    outline: none;
+
+    transition: all 0.2s ease;
+}
+
+
+.register-box input:hover {
+    border-color: #b8c0cc;
+
+    background: #ffffff;
+}
+
+
+.register-box input:focus {
+    border-color: #2563eb;
+
+    background: white;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+
+.register-box input::placeholder {
+    color: #9ca3af;
+}
+
+
+/* ==========================
+   REGISTER BUTTON
+========================== */
+
+.register-box button {
+    width: 100%;
+
+    height: 44px;
+
+    padding: 11px;
+
+    margin-top: 6px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+
+.register-box button:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 6px 15px rgba(37, 99, 235, 0.25);
+}
+
+
+.register-box button:active {
+    transform: translateY(0);
+
+    box-shadow: none;
+}
+
+
+/* ==========================
+   LOGIN LINK
+========================== */
+
+.register-login-link {
+    margin-top: 20px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #e5e7eb;
+
+    text-align: center;
+
+    font-size: 12px;
+
+    color: #6b7280;
+}
+
+
+.register-login-link a {
+    color: #2563eb;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+
+.register-login-link a:hover {
+    text-decoration: underline;
+}
+
+
+/* ==========================
+   MOBILE RESPONSIVE
+========================== */
+
+@media (max-width: 768px) {
+
+    .register-page {
+        padding: 20px;
+    }
+
+
+    .register-box {
+        max-width: 500px;
+
+        min-height: auto;
+
+        flex-direction: column;
+    }
+
+
+    .register-left,
+    .register-right {
+        width: 100%;
+
+        box-sizing: border-box;
+    }
+
+
+    .register-left {
+        padding: 35px 30px;
+    }
+
+
+    .register-left h1 {
+        font-size: 28px;
+    }
+
+
+    .register-left p {
+        max-width: 100%;
+    }
+
+
+    .register-features {
+        flex-direction: row;
+
+        flex-wrap: wrap;
+
+        gap: 8px;
+    }
+
+
+    .register-right {
+        padding: 35px 30px;
+    }
+}
+
+
+/* ==========================
+   SMALL MOBILE
+========================== */
+
+@media (max-width: 480px) {
+
+    .register-page {
+        padding: 15px;
+    }
+
+
+    .register-left {
+        padding: 28px 22px;
+    }
+
+
+    .register-right {
+        padding: 30px 22px;
+    }
+
+
+    .register-logo {
+        width: 48px;
+        height: 48px;
+
+        font-size: 21px;
+
+        margin-bottom: 18px;
+    }
+
+
+    .register-left h1 {
+        font-size: 25px;
+    }
+
+
+    .register-right h2 {
+        font-size: 24px;
+    }
+
+
+    .register-feature {
+        font-size: 12px;
+
+        padding: 7px 10px;
+    }
+}
