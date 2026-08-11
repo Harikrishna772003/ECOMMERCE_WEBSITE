@@ -354,6 +354,50 @@ SQL Database
 ```
 
 ---
+# 🚀 Live Deployment
+
+ShopEase is successfully deployed and available online.
+
+## 🌐 Application Links
+
+| Component | URL | Status |
+|-----------|-----|--------|
+| 🛍️ Frontend | https://shopease-frontend-harikrishna.onrender.com | 🟢 Live |
+| ⚙️ Backend API | https://shopease-backend-vq6k.onrender.com | 🟢 Live |
+| 📦 GitHub Repository | https://github.com/Harikrishna772003/ECOMMERCE_WEBSITE | 🟢 Available |
+
+### 🛍️ Frontend
+
+The **React + Vite frontend** is deployed on Render.
+
+**Live Website:**  
+https://shopease-frontend-harikrishna.onrender.com
+
+### ⚙️ Backend
+
+The **Python + Flask REST API** is deployed on Render.
+
+**Live API:**  
+https://shopease-backend-vq6k.onrender.com
+
+### 🗄️ Database
+
+The application uses **Aiven MySQL** as the production database.
+
+### 🔗 Production Flow
+
+```text
+React + Vite Frontend
+        │
+        │ API Requests
+        ▼
+Flask REST API
+        │
+        │ Database Queries
+        ▼
+Aiven MySQL Database
+
+---
 
 # 📄 License
 
@@ -361,7 +405,7 @@ This project is intended for learning, development, and portfolio purposes.
 
 ---
 
-# 👨‍💻 Designed & Developed By
+###👨‍💻 Designed & Developed By
 
 ## **HARIKRISHNA THUMULA**
 
