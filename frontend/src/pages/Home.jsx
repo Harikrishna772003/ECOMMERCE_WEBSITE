@@ -4,7 +4,7 @@ import LatestProducts from "../components/LatestProducts/LatestProducts";
 import OfferBanner from "../components/OfferBanner/offerBanner";
 import WhyChoose from "../components/WhyChoose/WhyChoose";
 import Testimonials from "../components/Testimonials/Testimonials";
-import Newsletter from "../components/Newsletter/Newsletter";
+import NewsLetter from "../components/Newsletter/NewsLetter";
 
 function Home() {
     return (
@@ -21,7 +21,7 @@ function Home() {
 
             <Testimonials />
 
-            <Newsletter />
+            <NewsLetter />
         </>
     );
 }
