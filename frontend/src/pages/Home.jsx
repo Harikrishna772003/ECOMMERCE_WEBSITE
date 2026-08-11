@@ -7,11 +7,8 @@ import Testimonials from "../components/Testimonials/Testimonials";
 import Newsletter from "../components/Newsletter/Newsletter";
 
 function Home() {
-
     return (
-
         <>
-
             <Hero />
 
             <CategoryCard />
@@ -25,11 +22,8 @@ function Home() {
             <Testimonials />
 
             <Newsletter />
-
         </>
-
     );
-
 }
 
 export default Home;
