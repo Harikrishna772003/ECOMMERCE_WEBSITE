@@ -19,3 +19,12 @@ razorpay==1.4.2
 reportlab==4.4.3
 gunicorn==26.0.0
 Flask-Mail==0.10.0
+razorpay==1.4.2
+reportlab==4.4.3
+gunicorn==26.0.0
+Flask-Mail==0.10.0
+razorpay==1.4.2
+reportlab==4.4.3
+gunicorn==26.0.0
+Flask-Mail==0.10.0
+setuptools==80.9.0
